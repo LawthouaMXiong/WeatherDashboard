@@ -1,1 +1,159 @@
+<!doctype html>
+<html lang="en">
 
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Challenge 6</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.4/css/bulma.min.css">
+    <link href="./assets/css/style.css">
+</head>
+
+<body>
+
+    <div class="container is-fluid">
+
+        <div class="title is-1 has-text-centered has-background-primary	p-5">
+            <h1 class="has-text-weight-bold">Weather Dashboard</h1>
+        </div>
+
+        <div id="searchBar" class="has-text-centered options is-danger is-rounded">
+            <input class="input is-primary" type="text" placeholder="Input City">
+            <input class="button" type="submit" value="Submit input">
+        </div>
+
+        <div class="card p-3 m-2" id="todayWeather">
+            <h1>State Name</h1>
+            <div class="sub column has-text-left has-text-centered">
+                <div>
+                    <p class="humidity mt-0 is-size-4">%</p>
+                    <p>Humidity</p>
+                </div>
+            </div>
+            <div class="sub column has-text-left has-text-centered">
+                <div>
+                    <p class="wind mt-0 is-size-4">mph</p>
+                    <p>Wind Speed</p>
+                </div>
+            </div>
+            <div class="sub column has-text-left has-text-centered">
+                <div>
+                    <p class="wind mt-0 is-size-4">°F</p>
+                    <p>Temp</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="card p-3 m-2">
+            <h1>5-Day Forecast:</h1>
+            <div class="columns" id="fiveWeather">
+                <div class="column" id="day1">
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p>Temp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="day2">
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p>Temp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="day3">
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p>Temp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="day4">
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p>Temp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="day5">
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p>Temp</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <script src="./assets/js/script.js"></script>
+</body>
+
+</html>
