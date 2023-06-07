@@ -18,13 +18,67 @@
             <h1 class="has-text-weight-bold">Weather Dashboard</h1>
         </div>
 
-        <div id="searchBar" class="has-text-centered options is-danger is-rounded">
-            <input class="input is-primary" type="text" placeholder="Input City">
-            <input class="button" type="submit" value="Submit input">
-        </div>
+        <div class="column has-text-centered">
+            <div class="options select is-danger is-rounded">
+              <select class="stateInput">
+                <option disabled selected hidden>Pick your state</option>
+                <option>Alabama</option>
+                <option>Alaska</option>
+                <option>Arizona</option>
+                <option>Arkansas</option>
+                <option>California</option>
+                <option>Colorado</option>
+                <option>Connecticut</option>
+                <option>Delaware</option>
+                <option>Florida</option>
+                <option>Georgia</option>
+                <option>Guam</option>
+                <option>Hawaii</option>
+                <option>Idaho</option>
+                <option>Illinois</option>
+                <option>Indiana</option>
+                <option>Iowa</option>
+                <option>Kansas</option>
+                <option>Kentucky</option>
+                <option>Louisiana</option>
+                <option>Maine</option>
+                <option>Maryland</option>
+                <option>Massachusetts</option>
+                <option>Michigan</option>
+                <option>Minnesota</option>
+                <option>Mississippi</option>
+                <option>Missouri</option>
+                <option>Montana</option>
+                <option>Nebraska</option>
+                <option>Nevada</option>
+                <option>New Hampshire</option>
+                <option>New Jersey</option>
+                <option>New Mexico</option>
+                <option>New York</option>
+                <option>North Carolina</option>
+                <option>North Dakota</option>
+                <option>Ohio</option>
+                <option>Oklahoma</option>
+                <option>Oregon</option>
+                <option>Pennsylvania</option>
+                <option>Rhode Island</option>
+                <option>South Carolina</option>
+                <option>South Dakota</option>
+                <option>Tennessee</option>
+                <option>Texas</option>
+                <option>Utah</option>
+                <option>Vermont</option>
+                <option>Virginia</option>
+                <option>Washington</option>
+                <option>West Virginia</option>
+                <option>Wisconsin</option>
+                <option>Wyoming</option>
+              </select>
+            </div>
+          </div>
 
-        <div class="card p-3 m-2" id="todayWeather">
-            <h1>State Name</h1>
+        <div class="card p-3 m-2 is-hidden " id="todayWeather">
+            <h1 class="state">State Name</h1>
             <div class="sub column has-text-left has-text-centered">
                 <div>
                     <p class="humidity mt-0 is-size-4">%</p>
@@ -39,51 +93,31 @@
             </div>
             <div class="sub column has-text-left has-text-centered">
                 <div>
-                    <p class="wind mt-0 is-size-4">°F</p>
+                    <p class="temp mt-0 is-size-4">°F</p>
                     <p>Temp</p>
                 </div>
             </div>
         </div>
 
-        <div class="card p-3 m-2">
+        <div class="card p-3 m-2 is-hidden" id="fiveDay">
             <h1>5-Day Forecast:</h1>
             <div class="columns" id="fiveWeather">
-                <div class="column" id="day1">
-                    <div class="sub column has-text-left has-text-centered">
-                        <div>
-                            <p class="humidity mt-0 is-size-4">%</p>
-                            <p>Humidity</p>
-                        </div>
-                    </div>
-                    <div class="sub column has-text-left has-text-centered">
-                        <div>
-                            <p class="wind mt-0 is-size-4">mph</p>
-                            <p>Wind Speed</p>
-                        </div>
-                    </div>
-                    <div class="sub column has-text-left has-text-centered">
-                        <div>
-                            <p class="wind mt-0 is-size-4">°F</p>
-                            <p>Temp</p>
-                        </div>
-                    </div>
-                </div>
                 <div class="column" id="day2">
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p class="humidity2 mt-0 is-size-4">%</p>
                             <p>Humidity</p>
                         </div>
                     </div>
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p class="wind2 mt-0 is-size-4">mph</p>
                             <p>Wind Speed</p>
                         </div>
                     </div>
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p class="temp2 mt-0 is-size-4">°F</p>
                             <p>Temp</p>
                         </div>
                     </div>
@@ -91,19 +125,19 @@
                 <div class="column" id="day3">
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p class="humidity3 mt-0 is-size-4">%</p>
                             <p>Humidity</p>
                         </div>
                     </div>
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p class="wind3 mt-0 is-size-4">mph</p>
                             <p>Wind Speed</p>
                         </div>
                     </div>
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p class="temp3 mt-0 is-size-4">°F</p>
                             <p>Temp</p>
                         </div>
                     </div>
@@ -111,19 +145,19 @@
                 <div class="column" id="day4">
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p class="humidity4 mt-0 is-size-4">%</p>
                             <p>Humidity</p>
                         </div>
                     </div>
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p class="wind4 mt-0 is-size-4">mph</p>
                             <p>Wind Speed</p>
                         </div>
                     </div>
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p class="temp4 mt-0 is-size-4">°F</p>
                             <p>Temp</p>
                         </div>
                     </div>
@@ -131,19 +165,39 @@
                 <div class="column" id="day5">
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="humidity mt-0 is-size-4">%</p>
+                            <p class="humidity5 mt-0 is-size-4">%</p>
                             <p>Humidity</p>
                         </div>
                     </div>
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="wind mt-0 is-size-4">mph</p>
+                            <p class="wind5 mt-0 is-size-4">mph</p>
                             <p>Wind Speed</p>
                         </div>
                     </div>
                     <div class="sub column has-text-left has-text-centered">
                         <div>
-                            <p class="wind mt-0 is-size-4">°F</p>
+                            <p class="temp5 mt-0 is-size-4">°F</p>
+                            <p>Temp</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="column" id="day6">
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="humidity6 mt-0 is-size-4">%</p>
+                            <p>Humidity</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="wind6 mt-0 is-size-4">mph</p>
+                            <p>Wind Speed</p>
+                        </div>
+                    </div>
+                    <div class="sub column has-text-left has-text-centered">
+                        <div>
+                            <p class="temp6 mt-0 is-size-4">°F</p>
                             <p>Temp</p>
                         </div>
                     </div>
