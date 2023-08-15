@@ -20,5 +20,5 @@ WHEN I click on a city in the search history<br />
 THEN I am again presented with current and future conditions for that city<br />
 
 ## **Links to Portfolio**
-* GitHub Repository Link - https://github.com/LawthouaMXiong/Challenge6
-* GitHub Pages Deployed Link - https://lawthouamxiong.github.io/Challenge6/
+* GitHub Repository Link - https://github.com/LawthouaMXiong/WeatherDashboard
+* GitHub Pages Deployed Link - https://lawthouamxiong.github.io/WeatherDashboard/
